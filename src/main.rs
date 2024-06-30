@@ -53,7 +53,7 @@ fn select_sonnets(text: String) -> Vec<Sonnet> {
     .collect::<Vec<&str>>()
     .get(0)
     .unwrap()                                                                   // here I have just the sonnets
-    .split("\n\n\n")                                                            // splits the sonnets
+    .split("\n\n")                                                            // splits the sonnets
     .collect::<Vec<&str>>()
     .iter()
     .map(|s: &&str| s.trim().to_string())
